@@ -44,6 +44,7 @@ header {
 
       &_btn:hover {
         background: #00c3e3;
+        cursor: pointer;
         h2 {
         color: #fff;
         }
@@ -53,18 +54,15 @@ header {
 }
 
 .container {
-  background: #fff;
-  width: 512px;
-  height: 512px;
   margin: auto;
+  width: 512px;
+  height: 521px;
 
   &_grid {
-    max-width: 512px;
-    max-height: 512px;
-
-    &_item {
-      border: #000 solid 1px;
-    }
+    background: #fff;
+    width: 512px;
+    height: 512px;
+    display: inline-grid;
   }
 }
 
