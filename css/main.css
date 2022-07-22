@@ -40,12 +40,26 @@ header .menu_item_btn h2 {
   font-family: "Common Pixel", sans-serif;
   text-transform: uppercase;
 }
-header .menu_item_btn:hover {
+header .menu_item_btn:hover, header .menu_item_btn:focus {
   background: #00c3e3;
   cursor: pointer;
 }
-header .menu_item_btn:hover h2 {
+header .menu_item_btn:hover h2, header .menu_item_btn:focus h2 {
   color: #fff;
+}
+
+#clearBtn:hover {
+  background: #00c3e3;
+}
+#clearBtn:hover h2 {
+  color: #fff;
+}
+
+#clearBtn:focus {
+  background: #fff;
+}
+#clearBtn:focus h2 {
+  color: #00c3e3;
 }
 
 .container {

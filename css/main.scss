@@ -41,8 +41,7 @@ header {
           text-transform: uppercase;
         }
       }
-
-      &_btn:hover {
+      &_btn:hover, &_btn:focus {
         background: #00c3e3;
         cursor: pointer;
         h2 {
@@ -50,6 +49,20 @@ header {
         }
       }
     }
+  }
+}
+
+#clearBtn:hover {
+  background: #00c3e3;
+  h2 {
+    color: #fff;
+  }
+}
+
+#clearBtn:focus {
+  background: #fff;
+  h2 {
+    color: #00c3e3;
   }
 }
 
