@@ -17,6 +17,7 @@ let sizeValue = '16'
 let colorValue = '#000000'
 
 sizeBtn.addEventListener('click', () => {
+    sizeBtn.disabled = 'true'
     showSizeBar()
 })
 
@@ -53,7 +54,10 @@ const showSizeBar = () => {
             item.addEventListener('mouseover', (event) => event.target.style.background = 'black')
         })
     })
-    sizeBar.addEventListener('mouseleave', () => sizeDiv.remove())
+    sizeBar.addEventListener('mouseleave', () => {
+        sizeDiv.remove()
+        sizeBtn.removeAttribute('disabled')
+    })
 }
 
 const createGridItem = () => {
@@ -112,6 +116,7 @@ const setColorPicker = () => {
 }
 
 colorBtn.addEventListener('click', () => {
+    colorBtn.disabled = 'true'
     setColorPicker()
     divColor = document.createElement('div')
     divColor.setAttribute('id', 'colorDiv')
@@ -125,8 +130,12 @@ colorBtn.addEventListener('click', () => {
             item.addEventListener('mouseover', event => event.target.style.background = colorItem.value)
         })
     })
-    colorItem.addEventListener('mouseleave', () => colorDivId.remove())
+    colorItem.addEventListener('mouseleave', () => {
+        colorDivId.remove()
+        colorBtn.removeAttribute('disabled')
+    })
 })
+
 
 eraserBtn.addEventListener('click', () => {
    document.querySelectorAll('.cell').forEach(item => {
