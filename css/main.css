@@ -1,6 +1,12 @@
+@font-face {
+  font-family: "montserrat-bold-webfont";
+  src: url("../font/montserrat-bold-webfont.woff2");
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   background: #989898;
-  font-family: "Common Pixel", sans-serif;
+  font-family: "montserrat-bold-webfont";
 }
 
 header {
@@ -37,7 +43,7 @@ header .menu_item_btn {
 header .menu_item_btn h2 {
   color: #00c3e3;
   font-size: 20px;
-  font-family: "Common Pixel", sans-serif;
+  font-family: "montserrat-bold-webfont";
   text-transform: uppercase;
 }
 header .menu_item_btn:hover, header .menu_item_btn:focus {

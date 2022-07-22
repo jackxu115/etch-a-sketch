@@ -1,6 +1,15 @@
+$pixel_font: 'montserrat-bold-webfont';
+
+@font-face {
+  font-family: $pixel_font;
+  src: url("../font/montserrat-bold-webfont.woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   background: #989898;
-  font-family: 'Common Pixel', sans-serif;
+  font-family: $pixel_font;
 }
 
 header {
@@ -16,10 +25,12 @@ header {
     margin: 0;
     text-transform: uppercase;
   }
+
   .menu {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+
     &_item {
       margin: 10px;
       height: 60px;
@@ -37,15 +48,17 @@ header {
         h2 {
           color: #00c3e3;
           font-size: 20px;
-          font-family: 'Common Pixel', sans-serif;
+          font-family: $pixel_font;
           text-transform: uppercase;
         }
       }
+
       &_btn:hover, &_btn:focus {
         background: #00c3e3;
         cursor: pointer;
+
         h2 {
-        color: #fff;
+          color: #fff;
         }
       }
     }
@@ -54,6 +67,7 @@ header {
 
 #clearBtn:hover {
   background: #00c3e3;
+
   h2 {
     color: #fff;
   }
@@ -61,6 +75,7 @@ header {
 
 #clearBtn:focus {
   background: #fff;
+
   h2 {
     color: #00c3e3;
   }
